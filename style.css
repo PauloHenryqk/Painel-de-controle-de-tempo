@@ -1,0 +1,149 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   background-color: midnightblue;
+}
+
+main {
+   display: grid;
+   width: 80%;
+   margin-top: 150px;
+   grid-template-areas: "c tw tp ts"
+                        "c te ts tsc";
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+}
+
+.container {
+   width: 280px;
+   height: 500px;
+   margin-right: 10px;
+   border-radius: 20px 20px 20px 20px;
+   background-color: #4800a2;
+   grid-area: c;
+   grid-row-start: 1;
+   grid-column-start: 1;
+}
+
+.perfil {
+   height: 350px;
+   color: white;
+   background-color: #4f16de;
+   border-radius: 20px 20px 20px 20px;
+}
+.perfil img {
+   margin-left: 30px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   border: 3px solid #fff;
+   border-radius: 50%;
+}
+.perfil p {
+   margin-left: 30px;
+   font: 8pt arial;
+}
+#nomeDoUsuario {
+   font: 20pt arial;
+}
+
+.tempo {
+   margin-left: 30px;
+   margin-top: 20px;
+   color: #5d21ca;
+}
+
+.work {
+   width: 220px;
+   height: 220px;
+   margin: 0 0 0 50px;
+   color: white;
+   background-color: #FFA463;
+   border-radius: 20px 20px 20px 20px;
+   grid-area: tw;
+   grid-column-start: 2;
+   grid-row-start: 1;
+}
+
+.work div, .play div, .study div, .exercise div, .social div, .selfCare div {
+   height: 200px;
+   padding: 30px;
+   background-color: #4800a2;
+   margin-top: 40px;
+   border-radius: 20px 20px 20px 20px;
+}
+
+.taskName {
+   display: flex;
+   justify-content: space-between;
+}
+.timeTask {
+   font: 40pt arial;
+   margin-top: 20px;
+   margin-bottom: 5px;
+}
+
+.play {
+   width: 220px;
+   height: 220px;
+   margin: 0 0 0 60px;
+   color: white;
+   background-color: #00b4ef;
+   border-radius: 20px 20px 20px 20px;
+   grid-area: tp;
+   grid-column-start: 3;
+   grid-row-start: 1;
+}
+
+.study {
+   width: 220px;
+   height: 220px;
+   margin: 0 0 0 60px;
+   color: white;
+   background-color: #f04646;
+   border-radius: 20px 20px 20px 20px;
+   grid-area: ts;
+   grid-row-start: 1;
+   grid-column-start: 4;
+}
+
+.exercise {
+   width: 220px;
+   height: 220px;
+   margin: 10px 50px 0px 50px;
+   color: white;
+   background-color: lightgreen;
+   border-radius: 20px 20px 20px 20px;
+   grid-area: te;
+   grid-row-start: 2;
+   grid-column-start: 2;
+}
+
+.social {
+   width: 220px;
+   height: 220px;
+   margin: 10px 0px 0px 60px;
+   color: white;
+   background-color: #9744c3;
+   border-radius: 20px 20px 20px 20px;
+   grid-area: ts;
+   grid-row-start: 2;
+   grid-column-start: 3;
+}
+
+.selfCare {
+   width: 220px;
+   height: 220px;
+   margin: 10px 0px 0px 60px;
+   color: white;
+   background-color: #ffff5b;
+   border-radius: 20px 20px 20px 20px;
+   grid-area: tsc;
+   grid-row-start: 2;
+   grid-column-start: 4;
+}
